@@ -52,6 +52,7 @@ class DBMongoDB implements Backend {
 
 // Веб сервис с зависимостью от интерфейса бекенда (абстракции), но не зависящий от конкретной реализации бекенда
 class WebService {
+  // зависимость от интерфейса бекенда (высшей абстракции)
   backend: Backend;
   constructor(backend: Backend) {
     this.backend = backend;
